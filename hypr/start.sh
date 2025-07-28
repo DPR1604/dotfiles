@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
-swww init &
-
-swww img ~/wallpapers/berries.jpg &
+pushd ~/dotfiles
+  git pull
+  stow . 
+popd
 
 nm-applet --indicator &
 
-waybar -c ~/.config/waybar/config.jsonrc & -s ~/.config/waybar/style.css &
+waybar & 
 
 dunst

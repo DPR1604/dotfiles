@@ -1,0 +1,12 @@
+[Unit]
+Description= Start SWWW for Hyprland
+After=hyperland.service
+
+[Service]
+Enviroment=RUST_BACKTRACE=1
+ExecStart=/run/current-system/sw/bin/swww-daemon
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
