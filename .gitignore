@@ -1,3 +1,7 @@
 pulse/
 xfce4/
 default.target.wants
+timers.target.wants
+tray.target
+result
+
