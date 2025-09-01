@@ -1,9 +1,9 @@
 [Unit]
 Description=Change wallpaper using swww
-after=swww.service
+After=swww.service
 
 [Service]
-ExecStart=/bin/bash ~/.config/swww/swww.sh
+ExecStart=/usr/bin/env bash /home/gjones/.config/swww/swww.sh
 
 [Install]
 WantedBy=default.target
