@@ -4,4 +4,5 @@ default.target.wants
 timers.target.wants
 tray.target
 result
+hypr/monitors.conf
 
