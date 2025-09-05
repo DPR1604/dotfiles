@@ -7,6 +7,4 @@ popd
 
 nm-applet --indicator &
 
-waybar & 
-
 dunst
