@@ -1,6 +1,7 @@
 pulse/
 xfce4/
 default.target.wants
+graphical-session.target.wants
 timers.target.wants
 tray.target
 result
