@@ -16,6 +16,7 @@ return {
 	"html",
 	"css",
 	"dockerfile",
+	"markdown",
       },
       auto_install = false,
     })
