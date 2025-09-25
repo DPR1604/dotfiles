@@ -1,8 +1,7 @@
 return {
-  {
-    "folke/tokyonight.nvim",
+  { "Mofiqul/dracula.nvim",
     config = function()
-      vim.cmd.colorscheme "tokyonight"
+      vim.cmd.colorscheme "dracula"
     end
   },
   {
@@ -11,7 +10,7 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
     opts = {
-      theme = 'tokyonight',
+      theme = 'dracula',
     },
   },
 }
