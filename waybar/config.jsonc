@@ -17,12 +17,13 @@
     "clock",
   ],
   "hyprland/window": {
-    "format": "{}",
+    "format": "{class}",
     "max-length": 45,
-    "rewrite": {
-      "": "Harsh"
-    },
     "separate-outputs": true,
+    "rewrite": {
+      "firefox": "Mozilla Firefox",
+      "kitty": "Kitty"
+    },
   },
   "hyprland/workspaces": {
     "format": "{icon}",
