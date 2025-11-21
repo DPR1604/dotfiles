@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 #Start swww
 WALLPAPERS_DIR=~/wallpapers
