@@ -1,7 +1,7 @@
 @import "colors.css";
 
 * {
-  font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "JetBrainsMono Nerd Font";
   font-size: 18px;
 }
 
@@ -87,6 +87,7 @@ button:hover {
 
 #battery.charging,
 #battery.plugged {
+  background-color: @background-darker;
   color: @green;
 }
 
