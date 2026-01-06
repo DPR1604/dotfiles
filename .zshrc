@@ -36,7 +36,7 @@ ENABLE_CORRECTION="true"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-HIST_STAMPS="dd/mm/yyyy"
+#HIST_STAMPS="dd/mm/yyyy"
 
 
 # Which plugins would you like to load?
@@ -87,12 +87,11 @@ FixDockerNetwork() {
 } 
 
 # aliases
-#alias ll = "ls -la";
-#alias update = "sudo nixos-rebuild switch"; # Alias to rebuild nixos 
-#alias code = "nvim"; # Becuase muscle memory dont @ me
-#alias cat = "bat"; # Again muscle memory
-#alias ssh = "TERM=xterm-256color ssh";
-#alias vim = "nvim"; # Muscle mempry again
+alias ll="ls -lah";
+alias code="nvim"; # Becuase muscle memory dont @ me
+alias cat="bat"; # Again muscle memory
+alias ssh="TERM=xterm-256color ssh";
+alias vim="nvim"; # Muscle memory again
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
