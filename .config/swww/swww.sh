@@ -2,7 +2,8 @@
 
 #Start swww
 WALLPAPERS_DIR=~/wallpapers
+CURRENT=$WALLPAPERS_DIR/current
 WALLPAPER=$(find $WALLPAPERS_DIR -type f | shuf -n 1)
-swww img "$WALLPAPER"
 
-ln -sfn $WALLPAPER $WALLPAPERS_DIR/lock-bg
+ln -sfn $WALLPAPER $CURRENT
+swww img "$CURRENT"
