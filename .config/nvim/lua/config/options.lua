@@ -18,7 +18,7 @@ vim.opt.background = "dark"
 -- backups and clipboard
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.clipboard = "unnamed"
+vim.api.nvim_set_option("clipboard", "unnamedplus")
 
 -- search
 vim.opt.hlsearch = true
