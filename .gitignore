@@ -6,4 +6,4 @@ timers.target.wants
 tray.target
 result
 hypr/monitors.conf
-
+*.bak
