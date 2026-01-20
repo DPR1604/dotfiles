@@ -92,6 +92,8 @@ alias code="nvim"; # Becuase muscle memory dont @ me
 alias cat="bat"; # Again muscle memory
 alias ssh="TERM=xterm-256color ssh";
 alias vim="nvim"; # Muscle memory again
+alias hibernate="systemctl hibernate";
+alias hugo="docker run --rm --network host -v /etc/passwd:/etc/passwd:ro -v "$PWD:/src" --user $(id -u) ghcr.io/dpr1604/hugo-cli:v0.150.0-1"
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
