@@ -1,13 +1,13 @@
 @import "colors.css";
 
 * {
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font Mono";
   font-size: 18px;
 }
 
 window#waybar {
-  background-color: @background-darker;
-  border-radius: 10px;
+  background-color: transparent;
+  border-radius: 2px;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -23,17 +23,17 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
   background: inherit;
-  box-shadow: inset 0 -3px @foreground;
+  box-shadow: inset 0 -3px @selection;
 }
 
 #workspaces button {
-  padding: 0 5px;
+  padding: 0 3px;
   background-color: transparent;
-  color: @foreground;
+  color: @comment;
 }
 
 #workspaces button.active {
-  background-color: @selection;
+  color: @foreground;
 }
 
 #workspaces button:hover {
@@ -70,7 +70,8 @@ button:hover {
 .modules-left,
 .modules-center {
   background-color: @background-darker;
-  border-radius: 15px;
+  border-radius: 5px;
+  border: 1px solid @purple;
 }
 
 .modules-right {
