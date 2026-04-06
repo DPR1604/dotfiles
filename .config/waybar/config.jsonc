@@ -3,17 +3,16 @@
   "margin-left": 10,
   "margin-right": 10,
   "modules-left": [
-    "hyprland/window"
+    "hyprland/workspaces"
   ],
   "modules-center": [
-    "hyprland/workspaces",
+    "clock"
   ],
   "modules-right": [
     "pulseaudio",
     "tray",
     "temperature",
-    "battery",
-    "clock",
+    "battery"
   ],
   "hyprland/window": {
     "format": "{class}",
