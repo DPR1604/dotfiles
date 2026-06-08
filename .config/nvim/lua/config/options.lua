@@ -10,6 +10,7 @@ vim.opt.smarttab = true
 -- ui
 vim.opt.number = true
 vim.opt.cursorline = true
+vim.opt.relativenumber = true
 vim.opt.signcolumn = "yes:1"
 vim.opt.scrolloff = 8
 vim.opt.termguicolors = true
@@ -25,3 +26,5 @@ vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+vim.hl = vim.highlight
