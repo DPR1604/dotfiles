@@ -1,16 +1,17 @@
-return {
-  { "Mofiqul/dracula.nvim",
+return { 
+  {
+    "folke/tokyonight.nvim",
     config = function()
-      vim.cmd.colorscheme "dracula"
+      vim.cmd.colorscheme "tokyonight"
     end
   },
   {
     "nvim-lualine/lualine.nvim",
-    dependancies = {
+    dependencies = {
       "nvim-tree/nvim-web-devicons",
-    },
-    opts = {
-      theme = 'dracula',
-    },
+    },   
+    opts ={
+      theme = 'tokyonight',
+    }
   },
 }
