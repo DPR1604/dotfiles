@@ -3,7 +3,7 @@ vim.g.mapleader = " "
 local keymap = vim.keymap -- for conciseness
 
 keymap.set("n", "<leader>cd", vim.cmd.Ex, { desc = "Open the default nvim explorer" })
-keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "open uddo tree" })
+keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "open undo tree" })
 
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
