@@ -93,9 +93,14 @@ alias cat="bat"; # Again muscle memory
 alias ssh="TERM=xterm-256color ssh";
 alias vim="nvim"; # Muscle memory again
 alias hibernate="systemctl hibernate";
-alias hugo="docker run --rm --network host -v /etc/passwd:/etc/passwd:ro -v "$PWD:/src" --user $(id -u) ghcr.io/dpr1604/hugo-cli:v0.150.0-1"
-alias homeup="nmcli connection up home"
-alias homedown="nmcli connection down home"
+alias hugo="docker run --rm --network host -v /etc/passwd:/etc/passwd:ro -v "$PWD:/src" --user $(id -u) ghcr.io/dpr1604/hugo-cli:v0.150.0-1";
+alias homeup="nmcli connection up home";
+alias homedown="nmcli connection down home";
+alias gd="git diff";
+alias gs="git status";
+alias ga="git add";
+alias gc="git commit -m";
+alias gp="git push";
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
