@@ -1,0 +1,66 @@
+{
+  "show_tray_icon": true,
+  "selected_locale": null,
+  "tts_enabled": false,
+  "allow_network_access": false,
+  "macos_handle_aggregates": true,
+  "profile_directory": "/home/gaz/.config/goxlr-utility/profiles/",
+  "mic_profile_directory": "/home/gaz/.config/goxlr-utility/mic-profiles/",
+  "samples_directory": "/home/gaz/.config/goxlr-utility/samples/",
+  "presets_directory": "/home/gaz/.config/goxlr-utility/presets/",
+  "icons_directory": "/home/gaz/.config/goxlr-utility/icons/",
+  "logs_directory": null,
+  "backup_directory": null,
+  "log_level": "Debug",
+  "open_ui_on_launch": false,
+  "activate": null,
+  "firmware_source": "Live",
+  "devices": {
+    "S200600408CQK": {
+      "profile": "Default",
+      "mic_profile": "DEFAULT-custom",
+      "hold_delay": 500,
+      "sampler_pre_buffer": null,
+      "chat_mute_mutes_mic_to_chat": true,
+      "lock_faders": false,
+      "enable_monitor_with_fx": false,
+      "sampler_reset_on_clear": true,
+      "sampler_fade_duration": 500,
+      "vod_mode": "Routable",
+      "shutdown_commands": [
+        {
+          "SaveProfile": []
+        },
+        {
+          "SaveMicProfile": []
+        },
+        {
+          "LoadMicProfile": [
+            "DEFAULT-custom",
+            false
+          ]
+        },
+        {
+          "LoadProfileColours": "Sleep"
+        }
+      ],
+      "sleep_commands": [
+        {
+          "LoadProfileColours": "Sleep"
+        }
+      ],
+      "wake_commands": [
+        {
+          "LoadMicProfile": [
+            "DEFAULT-custom",
+            false
+          ]
+        },
+        {
+          "LoadProfileColours": "Default"
+        }
+      ]
+    }
+  },
+  "sample_gain": {}
+}
