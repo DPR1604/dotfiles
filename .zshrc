@@ -15,7 +15,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
@@ -67,10 +66,18 @@ export ARCHFLAGS="-arch x86_64"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Customise path
-export PATH=$PATH:$HOME/bin
 
-# Custome functions
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+# Custom functions
 
 FixDockerNetwork() {
   echo "Stopping docker"
@@ -87,6 +94,7 @@ FixDockerNetwork() {
 } 
 
 # aliases
+alias rtbwindows="sudo efibootmgr -n 0000 && reboot"
 alias ll="ls -lah";
 alias code="nvim"; # Becuase muscle memory dont @ me
 alias cat="bat"; # Again muscle memory
@@ -101,6 +109,8 @@ alias gs="git status";
 alias ga="git add";
 alias gc="git commit -m";
 alias gp="git push";
-
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
